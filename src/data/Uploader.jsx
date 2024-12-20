@@ -61,7 +61,7 @@ async function createBookings() {
     const extrasPrice = booking.hasBreakfast
       ? numNights * 15 * booking.numGuests
       : 0; // hardcoded breakfast price
-    const totalPrice = cabinPrice + extrasPrice;
+    const totalprice = cabinPrice + extrasPrice;
 
     let status;
     if (
@@ -87,7 +87,7 @@ async function createBookings() {
       numNights,
       cabinPrice,
       extrasPrice,
-      totalPrice,
+      totalprice,
       guestId: allGuestIds.at(booking.guestId - 1),
       cabinId: allCabinIds.at(booking.cabinId - 1),
       status,
