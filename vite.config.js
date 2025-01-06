@@ -6,5 +6,6 @@ import { ghPages } from "vite-plugin-gh-pages";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), eslint(), ghPages()],
-  base: "/wild-oasis-hotel/",
+  base: "./",
+  outDir: "dist",
 });
