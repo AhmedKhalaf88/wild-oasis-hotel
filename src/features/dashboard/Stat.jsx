@@ -61,7 +61,7 @@ function Stat({ icon, title, value, color }) {
 Stat.propTypes = {
   icon: PropTypes.node,
   title: PropTypes.string,
-  value: PropTypes.number,
+  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   color: PropTypes.string,
 };
 
